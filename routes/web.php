@@ -15,5 +15,30 @@ Route::get('/kritiksaran', function () {
 
 
 Route::get('/tambahpengaduan', function () {
-    return view('tambahpengaduan', ['title' => 'Pengaduan']);
+    return view('tambahpengaduan', ['title' => 'Tambah Pengaduan']);
+});
+
+Route::get('/tambahkritiksaran', function () {
+    return view('tambahkritiksaran', ['title' => 'Tambah Kritik Saran']);
+});
+
+Route::get('/admin/home', function () {
+    return view('/admin/home', ['title' => 'Home Admin']);
+});
+
+Route::get('/admin/pengaduan', function () {
+    return view('/admin/pengaduan', ['title' => 'Pengaduan Admin']);
+});
+
+
+Route::get('/admin/kritiksaran', function () {
+    return view('/admin/kritiksaran', ['title' => 'Kritik Saran Admin']);
+});
+
+Route::get('/admin/akun', function () {
+    return view('/admin/akun', ['title' => 'Akun Admin']);
+});
+
+Route::get('/admin/mahasiswa', function () {
+    return view('/admin/mahasiswa', ['title' => 'Data Mahasiswa Admin']);
 });
