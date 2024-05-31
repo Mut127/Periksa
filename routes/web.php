@@ -12,3 +12,8 @@ Route::get('/pengaduan', function () {
 Route::get('/kritiksaran', function () {
     return view('kritiksaran', ['title' => 'Kritik dan Saran']);
 });
+
+
+Route::get('/tambahpengaduan', function () {
+    return view('tambahpengaduan', ['title' => 'Pengaduan']);
+});
