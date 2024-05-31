@@ -1,15 +1,13 @@
 <x-layout>
-    <!-- <x-header>
-        <div class="flex items-center justify-between">
-            <h2 class="text-xl font-semibold">Tuliskan Pengaduanmu</h2>
-            <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-black font-medium rounded-lg text-sm px-8 py-2.5 me-2 mb-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black dark:border-black">Tambah Pengaduan</button>
-        </div>
-    </x-header> -->
     <x-slot:title>{{$title}}</x-slot>
         <div class="p-5 mb-4 mt-10 mx-4 border border-gray-100 rounded-lg bg-D9B5DD dark:bg-gray-800 dark:border-gray-700 h-96 overflow-y-auto">
             <div class="flex items-center justify-between">
                 <h2 class="text-lg font-semibold text-gray-900 dark:text-white">KRITIK & SARAN ANDA</h2>
-                <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-black font-medium rounded-lg text-sm px-8 py-2.5 me-2 mb-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black dark:border-black">Tuliskan Kritik dan Saranmu</button>
+                <form action="{{ url('/tambahkritiksaran') }}" method="GET">
+                    <button type="submit" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-black font-medium rounded-lg text-sm px-8 py-2.5 me-2 mb-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black dark:border-black">
+                        Tulis Kritik dan Saranmu
+                    </button>
+                </form>
             </div>
             <div class="overflow-auto">
                 <ol class="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
@@ -170,6 +168,5 @@
                 </ol>
             </div>
         </div>
-
         <x-footer></x-footer>
 </x-layout>
